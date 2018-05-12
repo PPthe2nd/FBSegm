@@ -12,14 +12,13 @@ The most important of all: get the fMRI data. You should create an account on ht
 
 Then, you should download the computational models and place them in your path. For the Dense SIFT I've used the VLfeat implementation. You should go here (http://www.vlfeat.org/install-matlab.html) and follow the instructions. For the GIST, the code is provided here: http://people.csail.mit.edu/torralba/code/spatialenvelope/. For the PHOG, download the code here (http://www.robots.ox.ac.uk/~vgg/research/caltech/phog.html). For the LBP, get this function https://github.com/adikhosla/feature-extraction/blob/master/features/lbp/lbp.m.
 
-Finally, be sure to add to your path the following things. I've used a couple of functions by Kendrick Kay, so, place this repository (github.com/kendrickkay/knkutils) in your path. 
+Finally, be sure to add to your path the following things. I've used a couple of functions by Kendrick Kay, so, place this repository (github.com/kendrickkay/knkutils) in your path. [In progress]
 
-**2. What to do next? Just wait for further instructions...** 
+**2. What to do next** 
 
-
-
-
-
+1. Build the RDMs by running ...
+2. Download the Berk_stimuli.mat from here: https://osf.io/zrctd/?view_only=d2d7edf8cfde438da8868a1a6d6c0870 and place it in the main folder with the data
+3. Wait for new instructions [In progress]
 
 
 
