@@ -1,10 +1,12 @@
 # FBSegm
 
-### N.B.: Code is not properly commented yet. I will improve comments/variable names and work on an essential documentation.
+This code has been used in Papale et al., 2017. Foreground-background segmentation revealed during natural image viewing, bioRxiv.: https://www.biorxiv.org/content/early/2017/06/26/109496
 
-This code has been used in this work: https://www.biorxiv.org/content/early/2017/06/26/109496
+**Abstract**
 
-Honestly, the code was intended to be understood just by me and by a couple of other people (i.e., myself and I) and to work on my workstation, with my path, my OS (Ubuntu 17.04) and with my MATLAB version (r2017a). However, I was asked to share it, and since it has been used to work on public data, this seemed a reasonable request. Note that the paper underwent several rounds of revision and all the pipeline has changed several times, I've just uploaded the last one. Thus, I'm working a bit to let this stuff being comprehensible by other human beings. Still, there is no guarantee that the code will work on a different OS or Matlab version. For any problem, issue or bug, just write me (paolo.papale [at] imtlucca.it). 
+*One of the major challenges in visual neuroscience is represented by foreground-background segmentation. Data from nonhuman primates show that segmentation leads to two distinct, but associated processes: the enhancement of neural activity during figure processing (i.e., foreground enhancement) and the suppression of background-related activity (i.e., background suppression). To study foreground-background segmentation in ecological conditions, we introduce a novel method based on parametric modulation of low-level image properties followed by application of simple computational image-processing models. By correlating the outcome of this procedure with human fMRI activity, measured during passive viewing of 334 natural images, we produced easily interpretable “correlation images” from visual populations. Results show evidence of foreground enhancement in all tested regions, from V1 to LOC, while background suppression occurs in V4 and LOC only. “Correlation images” derived from V4 and LOC revealed a preserved spatial resolution of foreground textures, indicating a richer representation of the salient part of natural images, rather than a simplistic model of object shape. Our results indicate that scene segmentation occurs during natural viewing, even when individuals are not required to perform any particular task.*
+
+**N.B.** Honestly, the code was intended to be understood just by me and by a couple of other people (i.e., myself and I) and to work on my workstation, with my path, my OS (Ubuntu 17.04) and with my MATLAB version (r2017a). However, I was asked to share it, and since it has been used to work on public data, this seemed a reasonable request. Note that the paper underwent several rounds of revision and all the pipeline has changed several times, I've just uploaded the last one. Thus, I'm working a bit to let this stuff being comprehensible by other human beings. Still, there is no guarantee that the code will work on a different OS or Matlab version. For any problem, issue or bug, just write me (paolo.papale [at] imtlucca.it). 
 
 **There are some preliminary steps that you should do before getting this working.** 
 
@@ -16,7 +18,7 @@ Then, you should download the computational models and place them in your path. 
 
 Finally, be sure to add to your path the following things. I've used a couple of functions by Kendrick Kay, so, place this repository (github.com/kendrickkay/knkutils) in your path. I've also used the 'min2' and 'max2' functions by John D'Errico: https://it.mathworks.com/matlabcentral/fileexchange/22995-min2--max2
 
-**What to do next** 
+**What to do then** 
 
 N.B. Detailed methods are described in the paper, for what is not clear from it or from this readme, feel free to write me.
 N.B.B. Be aware that most of the following steps requires several hours with 6-8 CPUs (there are several parfor loops within the code, most of them start on the local profile, without further specifing the number of threads) and a lot of RAM (up to 64gb). The most intensive step (creation of ROI-specific null distros and bootstrapping) is not included since it would require days. I have uploaded the null distros and bootstrapped CIs instead - but write me for additional code/info. 
