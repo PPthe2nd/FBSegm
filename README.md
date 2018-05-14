@@ -10,11 +10,11 @@ Honestly, the code was intended to be understood just by me and by a couple of o
 
 The most important of all: get the fMRI data. You should create an account on https://crcns.org/; then download the vim-1 dataset; unzip everything and put it in the folder with the code.
 
-After, download the 'Berk_stimuli.mat', 'distro_nulla_Null_1000_snr_V1V2.mat' and 'Boot_rois_snr_1000_OK.mat' from here: https://osf.io/zrctd/?view_only=d2d7edf8cfde438da8868a1a6d6c0870 and place them in the main folder with the data. 
+Second, download the 'Berk_stimuli.mat', 'distro_nulla_Null_1000_snr_V1V2.mat' and 'Boot_rois_snr_1000_OK.mat' from here: https://osf.io/zrctd/?view_only=d2d7edf8cfde438da8868a1a6d6c0870 and place them in the main folder with the data. 
 
 Then, you should download the computational models and place them in your path. For the Dense SIFT I've used the VLfeat implementation. You should go here (http://www.vlfeat.org/install-matlab.html) and follow the instructions. For the GIST, the code is provided here: http://people.csail.mit.edu/torralba/code/spatialenvelope/. For the PHOG, download the code here (http://www.robots.ox.ac.uk/~vgg/research/caltech/phog.html). For the LBP, get this function https://github.com/adikhosla/feature-extraction/blob/master/features/lbp/lbp.m.
 
-Finally, be sure to add to your path the following things. I've used a couple of functions by Kendrick Kay, so, place this repository (github.com/kendrickkay/knkutils) in your path. [In progress]
+Finally, be sure to add to your path the following things. I've used a couple of functions by Kendrick Kay, so, place this repository (github.com/kendrickkay/knkutils) in your path. I've also used the 'min2' and 'max2' functions by John D'Errico: https://it.mathworks.com/matlabcentral/fileexchange/22995-min2--max2
 
 **What to do next** 
 
@@ -28,10 +28,23 @@ N.B.B. Be aware that most of the following steps requires several hours with 6-8
 5. Since you have arrived here, you would like to see some segmented giraffe here and there - as in Figure 5. 'neural_images.m' is made for you, enjoy!
 6. Cite the paper, because "tengo famiglia!!" (cit. "I have a family!!") 
 
-**If you use any of these stuff in a publication, be aware of the following:** [In progress]
+**References** 
 
-If you use the code or the method, you should cite the work mentioned at the beginning.
-If you use the fMRI data or the stimuli, you should cite: 
-If you use the models, you should cite:
+Code: 
+* *Papale et al., 2017. Foreground-background segmentation revealed during natural image viewing, bioRxiv.
 
-If you use the segmentations, cite both the fMRI works and the work mentioned at the beginning.
+fMRI data and stimuli: 
+* *Kay, et al., 2008. Identifying natural images from human brain activity. Nature, 452(7185), 352-355.
+* *Naselaris, et al., 2009. Bayesian reconstruction of natural images from human brain activity. Neuron, 63(6), 902-915.
+* *Kay, Naselaris, & Gallant, 2011. fMRI of human visual areas in response to natural images. CRCNS.org.
+
+Berkeley Segmentation Dataset: 
+* *Arbelaez et al., 2011. Contour detection and hierarchical image segmentation. IEEE Trans Pattern Anal Mach Intell. 33: 898-916.
+
+Computational models:
+* Gist: *Oliva A, Torralba A. 2001. Modeling the shape of the scene: A holistic representation of the spatial envelope. International journal of computer vision. 42: 145-175.
+* Dense SIFT: *Lazebnik S, Schmid C, Ponce J. 2006. Beyond bags of features: Spatial pyramid matching for recognizing natural scene categories. In: IEEE. p 2169-2178.
+* LBP: *Ojala T, Pietikäinen M, Mäenpää T. 2001. A generalized local binary pattern operator for multiresolution gray scale and rotation invariant texture classification. In: Springer. p 399-408.
+* PHOG: *Bosch A, Zisserman A, Munoz X. 2007. Representing shape with a spatial pyramid kernel. In: ACM. p 401-408.
+
+If you use this code or some of the material in a publication, cite the relative references.
