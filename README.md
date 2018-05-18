@@ -1,6 +1,6 @@
 # FBSegm
 
-This code has been used in Papale et al., 2017. Foreground-background segmentation revealed during natural image viewing, bioRxiv.: https://www.biorxiv.org/content/early/2017/06/26/109496
+This code has been used in Papale et al., 2018?. Foreground-background segmentation revealed during natural image viewing, *eNeuro* (Accepted)
 
 **Abstract**
 
@@ -33,20 +33,20 @@ N.B.B. Be aware that most of the following steps requires several hours with 6-8
 **References** 
 
 Code: 
-* Papale et al., 2017. Foreground-background segmentation revealed during natural image viewing, bioRxiv.
+* Papale et al., 2018?. Foreground-background segmentation revealed during natural image viewing, *eNeuro* (Accepted).
 
 fMRI data and stimuli: 
-* Kay, et al., 2008. Identifying natural images from human brain activity. Nature, 452(7185), 352-355.
-* Naselaris, et al., 2009. Bayesian reconstruction of natural images from human brain activity. Neuron, 63(6), 902-915.
-* Kay, Naselaris, & Gallant, 2011. fMRI of human visual areas in response to natural images. CRCNS.org.
+* Kay, et al., 2008. Identifying natural images from human brain activity. *Nature*, 452(7185), 352-355.
+* Naselaris, et al., 2009. Bayesian reconstruction of natural images from human brain activity. *Neuron*, 63(6), 902-915.
+* Kay, Naselaris, & Gallant, 2011. fMRI of human visual areas in response to natural images. *CRCNS.org*
 
 Berkeley Segmentation Dataset: 
-* Arbelaez et al., 2011. Contour detection and hierarchical image segmentation. IEEE Trans Pattern Anal Mach Intell. 33: 898-916.
+* Arbelaez et al., 2011. Contour detection and hierarchical image segmentation. *IEEE Trans Pattern Anal Mach Intell.* 33: 898-916.
 
 Computational models:
-* Gist: Oliva A, Torralba A. 2001. Modeling the shape of the scene: A holistic representation of the spatial envelope. International journal of computer vision. 42: 145-175.
-* Dense SIFT: Lazebnik S, Schmid C, Ponce J. 2006. Beyond bags of features: Spatial pyramid matching for recognizing natural scene categories. In: IEEE. p 2169-2178.
-* LBP: Ojala T, Pietikäinen M, Mäenpää T. 2001. A generalized local binary pattern operator for multiresolution gray scale and rotation invariant texture classification. In: Springer. p 399-408.
-* PHOG: Bosch A, Zisserman A, Munoz X. 2007. Representing shape with a spatial pyramid kernel. In: ACM. p 401-408.
+* Gist: Oliva A, Torralba A. 2001. Modeling the shape of the scene: A holistic representation of the spatial envelope. *International journal of computer vision.* 42: 145-175.
+* Dense SIFT: Lazebnik S, Schmid C, Ponce J. 2006. Beyond bags of features: Spatial pyramid matching for recognizing natural scene categories. In: *IEEE.* p 2169-2178.
+* LBP: Ojala T, Pietikäinen M, Mäenpää T. 2001. A generalized local binary pattern operator for multiresolution gray scale and rotation invariant texture classification. In: *Springer.* p 399-408.
+* PHOG: Bosch A, Zisserman A, Munoz X. 2007. Representing shape with a spatial pyramid kernel. In: *ACM.* p 401-408.
 
 If you use this code or some of the material in a publication, cite the relative references.
